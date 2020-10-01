@@ -2,6 +2,8 @@ import styled from 'styled-components'
 
 const ButtonApp = styled.button`
     background-color: black;
+    letter-spacing: 4px;
+    text-transform: uppercase;
     border: 1px solid white;
     padding: 1em 2em 1em 2em;
     color: white;

@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
 const List = styled.li`
-    font-size: 50px;
-    font-family: 'Staatliches', cursive;
+    font-size: 80px;
+    font-family: 'Staatliches';
+    letter-spacing: 10px;
     color: #fff !important ;
     a{
         color: #fff;

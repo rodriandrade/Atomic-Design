@@ -8,7 +8,16 @@ const List = styled.li`
     a{
         color: #fff;
         text-decoration: none;
-        :hover {text-decoration: underline #fff;}
+        position: relative;
+        :hover::after {
+            content: '';
+            position: absolute;
+            background: linear-gradient(90.01deg,#68F4DB 0%,#1E0358 99.98%);
+            width: 45%;
+            bottom: 0;
+            left: 0;
+            padding-bottom: 12px;
+        }
     }
 `
 

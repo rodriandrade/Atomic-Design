@@ -8,7 +8,11 @@ body {
   color: white;
   background-color: #080808;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='99' height='99' fill='%23000000'/%3E%3C/svg%3E");
+
 }
+
+body ::-moz-selection { background: rgb(138, 138, 126); }
+body ::selection { background: #68F4DB; }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

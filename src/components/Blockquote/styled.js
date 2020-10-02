@@ -6,6 +6,7 @@
       color: #fff;
       padding-left: 20px;
       font-family: 'Abel', sans-serif;
+      letter-spacing: 4px;
   `
 
   export default Quote

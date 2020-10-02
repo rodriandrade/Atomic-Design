@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Loading from "../components/Loading";
+import ParticlesBackground from '../components/ParticlesBackground';
 
 import { useAuth0 } from "@auth0/auth0-react";
 
@@ -10,7 +10,9 @@ const Profile = () => {
   const { name, picture, email } = user;
 
   return (
+    
     <Container className="mb-5">
+      <ParticlesBackground />
       <Row className="align-items-center profile-header mb-5 text-center text-md-left">
         <Col md={2}>
           <img

@@ -8,5 +8,7 @@ import Inner from '../Inner'
 import Container from '../Container'
 import Loading from '../Loading'
 import PrivateRoute from '../PrivateRoute'
+import GradientTitle from '../GradientTitle'
+import GradientBackImg from '../GradientBackImg'
 
-export { Blockquote, Button, Col, Container, Form, Grid, Loading, Inner, Nav, PrivateRoute };
+export { Blockquote, Button, Col, Container, Form, Grid, Loading, Inner, Nav, PrivateRoute, GradientTitle, GradientBackImg};

@@ -10,5 +10,6 @@ import Loading from '../Loading'
 import PrivateRoute from '../PrivateRoute'
 import GradientTitle from '../GradientTitle'
 import GradientBackImg from '../GradientBackImg'
+import ParticlesBackground from '../ParticlesBackground'
 
-export { Blockquote, Button, Col, Container, Form, Grid, Loading, Inner, Nav, PrivateRoute, GradientTitle, GradientBackImg};
+export { Blockquote, Button, Col, Container, Form, Grid, Loading, Inner, Nav, PrivateRoute, GradientTitle, GradientBackImg, ParticlesBackground};

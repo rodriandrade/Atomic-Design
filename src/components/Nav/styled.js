@@ -23,7 +23,6 @@ const List = styled.li`
 
 const Ul = styled.ul`
     list-style: none;
-    padding:0;
 `
 
 export {List, Ul}

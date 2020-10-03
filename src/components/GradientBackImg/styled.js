@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-const ImgGradBack =  styled.img`
+const ImgGradBack =  styled.div`
 
-    width: 100%;
+     position: relative;
     
-   ::after{
+     ::after{
         content: '';
         position: absolute;
         background: linear-gradient(90.01deg,#68F4DB 0%,#1E0358 99.98%);

@@ -1,5 +1,6 @@
 import React from 'react'
 import {GradientTitle, Grid, Col, Inner, GradientBackImg, ParticlesBackground} from '../components/Index';
+import sockImg from './socks.jpg'
 
 const About = () => {
     return (
@@ -15,6 +16,11 @@ const About = () => {
                         </Col>
                         <Col desktop={3} tablet={6} mobile={12}>
                             <GradientTitle> Rocket </GradientTitle>
+                        </Col>
+                        <Col desktop={6} tablet={6} mobile={12}>
+                            <GradientBackImg>
+                                <img alt="space-socks" src={sockImg}></img>
+                            </GradientBackImg>
                         </Col>
                     </Grid>
                 </Inner>

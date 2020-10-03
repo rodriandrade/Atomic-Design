@@ -1,6 +1,8 @@
 import React from 'react'
 import {GradientTitle, Grid, Col, Inner, GradientBackImg, ParticlesBackground} from '../components/Index';
-import sockImg from './socks.jpg'
+import sockImg from '../images/socks.jpg'
+
+const lights = require('./lights.jpg'); 
 
 const About = () => {
     return (
@@ -18,9 +20,7 @@ const About = () => {
                             <GradientTitle> Rocket </GradientTitle>
                         </Col>
                         <Col desktop={6} tablet={6} mobile={12}>
-                            <GradientBackImg>
-                                <img alt="space-socks" src={sockImg}></img>
-                            </GradientBackImg>
+                                <img alt="lightsimg" source={lights}></img>
                         </Col>
                     </Grid>
                 </Inner>

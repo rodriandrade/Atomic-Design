@@ -3,7 +3,8 @@ import styled from 'styled-components';
 const ImgGradBack =  styled.div`
 
      position: relative;
-    
+     background-image: url('../../images/socks.jpg');
+     height: 800px;
      ::after{
         content: '';
         position: absolute;

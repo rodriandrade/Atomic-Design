@@ -11,5 +11,6 @@ export const GlobalStyles = createGlobalStyle`
     color: #fff;
     letter-spacing: 4px;
     font-size:18px;
+    text-align: center;
   }
   `

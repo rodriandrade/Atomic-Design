@@ -1,11 +1,12 @@
 import React from 'react';
 import { StyledMenu } from './styled';
-import {Container, Nav} from '../Index'
+import {Container, Nav, ParticlesBackground} from '../Index'
 
 const Menu = ({ open }) => {
     console.log(open)
   return (
     <StyledMenu open={open}>
+        <ParticlesBackground />
         <Container direction="column">
             <Nav />
         </Container>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Blockquote, Form, Inner, Nav, ParticlesBackground, Search } from '../components/Index'
+import { Blockquote, Form, Inner, Nav, ParticlesBackground, Search, Header } from '../components/Index'
 
 const Experiment = () => {
 
@@ -7,6 +7,7 @@ const Experiment = () => {
         <div className="App">
             <ParticlesBackground />
             <Inner>
+                <Header />
                 <Search></Search>
             </Inner>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import {GradientTitle, Grid, Col, Inner, GradientBackImg, ParticlesBackground} from '../components/Index';
+import {GradientTitle, Grid, Col, Inner, GradientBackImg, ParticlesBackground, Header} from '../components/Index';
 
 const About = () => {
     return (
@@ -7,6 +7,7 @@ const About = () => {
             <ParticlesBackground />
                 <Inner>
 
+                    <Header />
                     <Grid colGap={30} rowGap={40}>
                         <Col desktop={3} tablet={6} mobile={12}>
                             <GradientTitle> Neptune </GradientTitle>

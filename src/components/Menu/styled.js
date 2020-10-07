@@ -6,7 +6,8 @@ export const StyledMenu = styled.nav`
   flex-direction: column;
   justify-content: center;
   */
-  background: yellow;
+  /*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='99' height='99' fill='%23000000'/%3E%3C/svg%3E");*/
+  background-color: #000;
   width: 100%;
   height: 100vh;
   text-align: left;

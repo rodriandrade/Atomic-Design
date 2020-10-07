@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
 import ParticlesBackground from "../components/ParticlesBackground";
-import { GradientBackImg, ArtistCard, Inner, Grid, Col, TracksCard } from "../components/Index";
+import { GradientBackImg, ArtistCard, Inner, Grid, Col, TracksCard, Header } from "../components/Index";
 
 import { useAuth0 } from "@auth0/auth0-react";
 
@@ -84,6 +84,7 @@ const Profile = () => {
     <Container className="mb-5">
       <ParticlesBackground />
         <Inner>
+          <Header />
           <Grid colGap={30} rowGap={40}>
 
             <Col desktop={3} tablet={6} mobile={12}>

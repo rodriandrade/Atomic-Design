@@ -17,5 +17,6 @@ import Search from '../Search'
 import TrackData from '../TrackData'
 import Burger from '../Burger'
 import Menu from '../Menu'
+import Header from '../Header'
 
-export { Blockquote, Burger, Button, ArtistCard, Col, Container, Form, Grid, Loading, Inner, Nav, PrivateRoute, GradientTitle, GradientBackImg, Menu, ParticlesBackground, Search, TracksCard, TrackData};
+export { Blockquote, Burger, Button, Header, ArtistCard, Col, Container, Form, Grid, Loading, Inner, Nav, PrivateRoute, GradientTitle, GradientBackImg, Menu, ParticlesBackground, Search, TracksCard, TrackData};

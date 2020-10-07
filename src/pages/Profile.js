@@ -76,32 +76,22 @@ const Profile = () => {
   }, []);
 
   /*
-{artists.map(artist => <Card key={artist._id} data={artist}/>)}
-      {tracks.map(track => <Card key={track._id} data={track}/>)}
-      */
-
-  return (
-    <div>
-
-      <ParticlesBackground />
-
-        <Inner>
-
-          <Header />
-
-          <Grid colGap={30} rowGap={40}>
-
-            <Col desktop={3} tablet={6} mobile={12}>
+<Col desktop={3} tablet={6} mobile={12}>
                 <GradientBackImg src={picture} alt="Profile" />
                 <h2>{nickname}</h2>
                 <p className="lead text-muted">{email}</p>
             </Col>
-              
+      */
+
+  return (
+    <div>
+      <ParticlesBackground />
+        <Inner>
+          <Header />
+          <Grid colGap={30} rowGap={40}>
             {artists.map((artist) => (<ArtistCard key={artist._id} data={artist} />))}
             {tracks.map((track) => (<TracksCard key={track._id} data={track} />))}
-
           </Grid>
-          
         </Inner>
     </div>
   );

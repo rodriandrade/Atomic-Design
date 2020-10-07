@@ -1,5 +1,5 @@
 import React from 'react'
-import { Blockquote, Form, Inner, Nav, Container, ParticlesBackground } from '../components/Index'
+import { Blockquote, Form, Inner, Nav, Container, ParticlesBackground, GradientBackImg } from '../components/Index'
 
 const Home = () => {
     return (
@@ -9,6 +9,7 @@ const Home = () => {
                     <Container direction="column">
                         <Nav />
                     </Container>
+                    <GradientBackImg src={"https://wallpaperaccess.com/full/392784.jpg"}/>
                 </Inner>
         </div>
     )

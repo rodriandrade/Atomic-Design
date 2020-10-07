@@ -3,11 +3,10 @@ import React from 'react'
 import ImgGradBack from './styled'
 
 
-const GradientBackImg = () =>{
+const GradientBackImg = props =>{
 
     return(
-        <ImgGradBack>
-        </ImgGradBack>
+        <ImgGradBack src={props.src} />
     )
 }
 

@@ -11,5 +11,9 @@ import PrivateRoute from '../PrivateRoute'
 import GradientTitle from '../GradientTitle'
 import GradientBackImg from '../GradientBackImg'
 import ParticlesBackground from '../ParticlesBackground'
+import ArtistCard from '../ArtistCard'
+import TracksCard from '../TracksCard'
+import Search from '../Search'
+import TrackData from '../TrackData'
 
-export { Blockquote, Button, Col, Container, Form, Grid, Loading, Inner, Nav, PrivateRoute, GradientTitle, GradientBackImg, ParticlesBackground};
+export { Blockquote, Button, ArtistCard, Col, Container, Form, Grid, Loading, Inner, Nav, PrivateRoute, GradientTitle, GradientBackImg, ParticlesBackground, Search, TracksCard, TrackData};

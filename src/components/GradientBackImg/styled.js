@@ -1,10 +1,8 @@
 import styled from 'styled-components';
 
-const ImgGradBack =  styled.div`
-
+const ImgGradBack =  styled.img`
+      width: 20%;
      position: relative;
-     background-image: url('../../images/socks.jpg');
-     height: 800px;
      ::after{
         content: '';
         position: absolute;

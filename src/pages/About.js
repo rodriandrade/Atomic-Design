@@ -18,7 +18,10 @@ const About = () => {
                             <GradientTitle> Rocket </GradientTitle>
                         </Col>
                         <Col desktop={6} tablet={6} mobile={12}>
-                            
+                            <GradientTitle> Boca </GradientTitle>
+                        </Col>
+                        <Col desktop={6} tablet={6} mobile={12}>
+                            <GradientTitle> Otro Boca </GradientTitle>
                         </Col>
                     </Grid>
                 </Inner>

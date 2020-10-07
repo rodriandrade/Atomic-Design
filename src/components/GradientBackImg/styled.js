@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const ImgGradBack =  styled.img`
-      width: 20%;
+      width: 40%;
      position: relative;
      ::after{
         content: '';

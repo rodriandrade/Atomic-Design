@@ -15,5 +15,7 @@ import ArtistCard from '../ArtistCard'
 import TracksCard from '../TracksCard'
 import Search from '../Search'
 import TrackData from '../TrackData'
+import Burger from '../Burger'
+import Menu from '../Menu'
 
-export { Blockquote, Button, ArtistCard, Col, Container, Form, Grid, Loading, Inner, Nav, PrivateRoute, GradientTitle, GradientBackImg, ParticlesBackground, Search, TracksCard, TrackData};
+export { Blockquote, Burger, Button, ArtistCard, Col, Container, Form, Grid, Loading, Inner, Nav, PrivateRoute, GradientTitle, GradientBackImg, Menu, ParticlesBackground, Search, TracksCard, TrackData};

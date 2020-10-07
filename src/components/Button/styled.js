@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const ButtonApp = styled.button`
-    background-color: black;
+    background-color: rgba(20,20,20,0.5);
     letter-spacing: 4px;
     text-transform: uppercase;
     border: 1px solid white;

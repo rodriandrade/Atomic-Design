@@ -41,7 +41,7 @@ const Profile = () => {
             headers: {
               Authorization:
                 "Bearer " +
-                "BQBVjIONlZ45rUTAk2aJJwLmAKQMfK0aC6jV7tzGvdQgibFQ4mJr9UAk_WqHa-qpBW-D52_deCgwkugppjid39LdMKsl3-6OQq9vYo3U6sSMdXMJctvbG27hoZkYj0WHPulWE6ZrBHvu_UKORk3l2tVxspA",
+                "BQDEBShtfgz6MNV7cl2TApmDzBLw7_c-YAmGq14LSDHHs2ZMTFCybasDpZXAbd3Gs5edj-7qHHnSQwayrznXkHEjSJNvt0eMpccU3NG823X7LB4j-KQCs0NoQc5mgn6rDN-Tn3YiLvN-8Q8N6hShaGIywM4",
             },
             json: true,
           };
@@ -58,7 +58,7 @@ const Profile = () => {
               headers: {
                 Authorization:
                   "Bearer " +
-                  "BQBVjIONlZ45rUTAk2aJJwLmAKQMfK0aC6jV7tzGvdQgibFQ4mJr9UAk_WqHa-qpBW-D52_deCgwkugppjid39LdMKsl3-6OQq9vYo3U6sSMdXMJctvbG27hoZkYj0WHPulWE6ZrBHvu_UKORk3l2tVxspA",
+                  "BQDEBShtfgz6MNV7cl2TApmDzBLw7_c-YAmGq14LSDHHs2ZMTFCybasDpZXAbd3Gs5edj-7qHHnSQwayrznXkHEjSJNvt0eMpccU3NG823X7LB4j-KQCs0NoQc5mgn6rDN-Tn3YiLvN-8Q8N6hShaGIywM4",
               },
               json: true,
             };
@@ -81,10 +81,14 @@ const Profile = () => {
       */
 
   return (
-    <Container className="mb-5">
+    <div>
+
       <ParticlesBackground />
+
         <Inner>
+
           <Header />
+
           <Grid colGap={30} rowGap={40}>
 
             <Col desktop={3} tablet={6} mobile={12}>
@@ -92,22 +96,14 @@ const Profile = () => {
                 <h2>{nickname}</h2>
                 <p className="lead text-muted">{email}</p>
             </Col>
-
-            <Col desktop={9} tablet={6} mobile={12}>
-              {artists.map((artist) => (
-                <ArtistCard key={artist._id} data={artist} />
-              ))}
-            </Col>
-
-            <Col desktop={9} tablet={6} mobile={12}>
-              {tracks.map((track) => (
-                <TracksCard key={track._id} data={track} />
-              ))}
-            </Col>
+              
+            {artists.map((artist) => (<ArtistCard key={artist._id} data={artist} />))}
+            {tracks.map((track) => (<TracksCard key={track._id} data={track} />))}
 
           </Grid>
+          
         </Inner>
-    </Container>
+    </div>
   );
 };
 

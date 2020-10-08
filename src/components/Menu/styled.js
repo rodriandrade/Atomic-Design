@@ -15,6 +15,7 @@ const StyledMenu = styled.div`
   position: absolute;
   transition: all 0.8s ease-in-out;
   position: fixed;
+  z-index: 3;
   left: ${({ open }) => open ? '0' : '-100%'};
   
   @media (max-width: ${({ theme }) => theme.mobile}) {

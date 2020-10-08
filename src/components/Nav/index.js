@@ -1,6 +1,7 @@
 import React from 'react'
 import {List, Ul} from './styled'
 import { Link, withRouter } from "react-router-dom";
+
 import { useAuth0 } from "@auth0/auth0-react";
 import LogOutButton from "../LogOutButton"
 import LoginButton from "../LoginButton";
@@ -19,7 +20,6 @@ const Nav = () =>{
         </Ul>
 
         {isAuthenticated ? <LogOutButton /> : <LoginButton />}
-        
     </nav>
     )
 }

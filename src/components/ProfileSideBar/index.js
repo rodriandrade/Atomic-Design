@@ -7,10 +7,12 @@ const ProfileSideBar = props =>{
     
     return(
             <Container>
-                
-                    <ProfilePicture src={picture}/>
+                <div>
+                    <ProfilePicture>
+                        <img src={picture}></img>
+                    </ProfilePicture>
                     <h2>{nickname}</h2>
-                
+                </div>
             </Container>    
     )
 

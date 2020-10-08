@@ -1,15 +1,24 @@
 import styled from 'styled-components'
 
 const Container = styled.div`
-    width: 30%;
-    height: 100vh;
+    height: 100%;
     background-color: #101010;
-    position: fixed;
+    place-content: center;
+    display: flex;
+
+    div{ 
+        position: fixed; 
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
 `
 
-const ProfilePicture = styled.img`
-    border-radius: 50px;
-    width: 100px;
+const ProfilePicture = styled.div`
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    overflow: hidden;
 `
 
 

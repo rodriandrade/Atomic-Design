@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledMenu } from './styled';
+import { StyledMenu, MenuContainer } from './styled';
 import {Container, Nav, ParticlesBackground} from '../Index'
 
 const Menu = ({ open }) => {
@@ -7,9 +7,9 @@ const Menu = ({ open }) => {
   return (
     <StyledMenu open={open}>
         <ParticlesBackground />
-        <Container direction="column">
+        <MenuContainer>
             <Nav />
-        </Container>
+        </MenuContainer>
     </StyledMenu>
   )
 }

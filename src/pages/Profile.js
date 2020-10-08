@@ -41,7 +41,7 @@ const Profile = () => {
             headers: {
               Authorization:
                 "Bearer " +
-                "BQBKnibWRNgR1Hh6C6Ro9G21Un6QOwqx6Z8PQhs3v5fU4kg-sQic_XrOswehDMBDQyOkpNiA9V94TvaCC99Z37-yHStjonXQ_U-uWRyVxVOE_7jKMnkvp0sxl2HrGtT0ClYZ5E4mzS8MPzaqOcRovtUS9zM",
+                "BQAklo2h_G-aUP4HQkDv4_Y78Bewh53b7dps-Tip0Fmc3YE0RK7LMhtt3HPdtDrAnQpPIWBYzIqhA18duO8-FEPS6CGhO3jMncL3kYYf7H8neTdtuvTzUs2WoaaMiYmkggkSvdG1g3midiyWFskmnSKJ",
             },
             json: true,
           };
@@ -58,7 +58,7 @@ const Profile = () => {
               headers: {
                 Authorization:
                   "Bearer " +
-                  "BQBKnibWRNgR1Hh6C6Ro9G21Un6QOwqx6Z8PQhs3v5fU4kg-sQic_XrOswehDMBDQyOkpNiA9V94TvaCC99Z37-yHStjonXQ_U-uWRyVxVOE_7jKMnkvp0sxl2HrGtT0ClYZ5E4mzS8MPzaqOcRovtUS9zM",
+                  "BQAklo2h_G-aUP4HQkDv4_Y78Bewh53b7dps-Tip0Fmc3YE0RK7LMhtt3HPdtDrAnQpPIWBYzIqhA18duO8-FEPS6CGhO3jMncL3kYYf7H8neTdtuvTzUs2WoaaMiYmkggkSvdG1g3midiyWFskmnSKJ",
               },
               json: true,
             };
@@ -86,14 +86,24 @@ const Profile = () => {
   return (
     <div>
       <ParticlesBackground />
-        <ProfileSideBar user={user}/>
         <Header />
-        <Inner>
           <Grid colGap={30} rowGap={40}>
-            {artists.map((artist) => (<ArtistCard key={artist._id} data={artist} />))}
-            {tracks.map((track) => (<TracksCard key={track._id} data={track} />))}
+
+
+            <Col desktop={3} tablet={6} mobile={12}>
+              <ProfileSideBar user={user}/>
+            </Col>
+
+            <Col desktop={8} tablet={6} mobile={12}>
+              <Col desktop={12} tablet={12} mobile={12}>
+                <h1> Favorite Artists </h1>
+              </Col>
+              <Grid colGap={30} rowGap={40}>
+                {artists.map((artist) => (<ArtistCard key={artist._id} data={artist} />))}
+                {tracks.map((track) => (<TracksCard key={track._id} data={track} />))}
+              </Grid>
+            </Col>
           </Grid>
-        </Inner>
     </div>
   );
 };

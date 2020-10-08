@@ -19,6 +19,7 @@ const ProfilePicture = styled.div`
     width: 230px;
     height: 230px;
     overflow: hidden;
+    z-index: 0;
 `
 
 

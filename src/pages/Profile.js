@@ -41,7 +41,7 @@ const Profile = () => {
             headers: {
               Authorization:
                 "Bearer " +
-                "BQAklo2h_G-aUP4HQkDv4_Y78Bewh53b7dps-Tip0Fmc3YE0RK7LMhtt3HPdtDrAnQpPIWBYzIqhA18duO8-FEPS6CGhO3jMncL3kYYf7H8neTdtuvTzUs2WoaaMiYmkggkSvdG1g3midiyWFskmnSKJ",
+                "BQCIRB5pCbxxQMjiaA9iXyMykGxZhnkC83hHAQtpCTNq9CRdbtykdcdOZt3-ovyHwu6XbMR7Bx2CXOv2TJNjSBCNTnvDYiPOwu4V1LdHi9zh7CszrqIltKWDrxeRW2H_Z6Bfy9hbVeS6ywhbkAmwTvh6",
             },
             json: true,
           };
@@ -58,7 +58,7 @@ const Profile = () => {
               headers: {
                 Authorization:
                   "Bearer " +
-                  "BQAklo2h_G-aUP4HQkDv4_Y78Bewh53b7dps-Tip0Fmc3YE0RK7LMhtt3HPdtDrAnQpPIWBYzIqhA18duO8-FEPS6CGhO3jMncL3kYYf7H8neTdtuvTzUs2WoaaMiYmkggkSvdG1g3midiyWFskmnSKJ",
+                  "BQCIRB5pCbxxQMjiaA9iXyMykGxZhnkC83hHAQtpCTNq9CRdbtykdcdOZt3-ovyHwu6XbMR7Bx2CXOv2TJNjSBCNTnvDYiPOwu4V1LdHi9zh7CszrqIltKWDrxeRW2H_Z6Bfy9hbVeS6ywhbkAmwTvh6",
               },
               json: true,
             };

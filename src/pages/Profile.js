@@ -41,7 +41,7 @@ const Profile = () => {
             headers: {
               Authorization:
                 "Bearer " +
-                "BQBKnibWRNgR1Hh6C6Ro9G21Un6QOwqx6Z8PQhs3v5fU4kg-sQic_XrOswehDMBDQyOkpNiA9V94TvaCC99Z37-yHStjonXQ_U-uWRyVxVOE_7jKMnkvp0sxl2HrGtT0ClYZ5E4mzS8MPzaqOcRovtUS9zM",
+                "BQBMbp9tHJBMcMnjvzqnTIymOfYSwT6f1VGDz7XAjWVW3_JbpqoPMnwUeiZszebudRxTjgHDGY-TksUpYo4COVtF4Fdn40HKGsyVdGPP1JIj6WfZixgGnQaVPDsuyUNZGSiu8OJVW85u8yZE_5RsAC1T5S0",
             },
             json: true,
           };
@@ -58,7 +58,7 @@ const Profile = () => {
               headers: {
                 Authorization:
                   "Bearer " +
-                  "BQBKnibWRNgR1Hh6C6Ro9G21Un6QOwqx6Z8PQhs3v5fU4kg-sQic_XrOswehDMBDQyOkpNiA9V94TvaCC99Z37-yHStjonXQ_U-uWRyVxVOE_7jKMnkvp0sxl2HrGtT0ClYZ5E4mzS8MPzaqOcRovtUS9zM",
+                  "BQBMbp9tHJBMcMnjvzqnTIymOfYSwT6f1VGDz7XAjWVW3_JbpqoPMnwUeiZszebudRxTjgHDGY-TksUpYo4COVtF4Fdn40HKGsyVdGPP1JIj6WfZixgGnQaVPDsuyUNZGSiu8OJVW85u8yZE_5RsAC1T5S0",
               },
               json: true,
             };
@@ -74,14 +74,6 @@ const Profile = () => {
     };
     data();
   }, []);
-
-  /*
-<Col desktop={3} tablet={6} mobile={12}>
-                <GradientBackImg src={picture} alt="Profile" />
-                <h2>{nickname}</h2>
-                <p className="lead text-muted">{email}</p>
-            </Col>
-      */
 
   return (
     <div>

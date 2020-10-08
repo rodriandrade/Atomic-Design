@@ -1,5 +1,5 @@
 import React from 'react'
-import {GradientTitle, Grid, Col, Inner, GradientBackImg, ParticlesBackground, Header} from '../components/Index';
+import {GradientTitle, Grid, Col, Inner, Form, GradientBackImg, ParticlesBackground, Header} from '../components/Index';
 
 const About = () => {
     return (
@@ -24,6 +24,10 @@ const About = () => {
                         <Col desktop={6} tablet={6} mobile={12}>
                             <GradientTitle> Otro Boca </GradientTitle>
                         </Col>
+                        <Col desktop={12} tablet={6} mobile={12}>
+                        <Form />
+                        </Col>
+                        
                     </Grid>
                 </Inner>
         </div>

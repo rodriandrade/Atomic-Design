@@ -1,5 +1,5 @@
 import React from 'react';
-import {Input, TextArea} from './styled'
+import {Input, TextArea } from './styled'
 import { Button, Grid, Col, Container } from '../Index'
 
 const Form = () =>{
@@ -7,7 +7,7 @@ const Form = () =>{
 
         <Container direction="column">
  
-                <Input placeholder="Name"/>
+                <Input placeholder="Name" />
                 <Input placeholder="Subject"/>
                 <TextArea placeholder="Text"/>
                 <Button>Submit</Button>

@@ -29,4 +29,4 @@ const TextArea = styled.textarea`
     margin-bottom:30px; 
 `
 
-export {Input, TextArea}
+export {Input, TextArea }

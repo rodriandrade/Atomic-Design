@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Blockquote, Burger, Button, Menu, Header, Form, Inner, Nav, Container, ParticlesBackground, GradientBackImg } from '../components/Index'
+import { Blockquote, Burger, Button, Menu, Header, Hero, Form, Inner, Nav, Container, ParticlesBackground, GradientBackImg } from '../components/Index'
 
 const Home = () => {
 
@@ -10,9 +10,7 @@ const Home = () => {
             <ParticlesBackground />
                 <Inner>
                     <Header />
-                    <img src={"https://i.ibb.co/wdWdgQQ/white-logo.png"}/>
-                    <h4>RODRIGO ANDRADE, MARTINA FRANCO, NAYLA ARROYO LIZZIO</h4>
-                    <Button>START</Button>
+                    <Hero />
                 </Inner>
         </div>
     )

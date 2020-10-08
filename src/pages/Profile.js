@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
 import ParticlesBackground from "../components/ParticlesBackground";
-import { GradientBackImg, ArtistCard, Inner, Grid, Col, TracksCard, Header } from "../components/Index";
+import { GradientBackImg, ArtistCard, Inner, Grid, Col, TracksCard, Header, ProfileSideBar} from "../components/Index";
 
 import { useAuth0 } from "@auth0/auth0-react";
 
 const Profile = () => {
   const { user } = useAuth0();
-  const { name, picture, email, nickname } = user;
+  /*const { name, picture, email, nickname } = user;*/
 
   const [tracks, setTracks] = useState([]);
   const [artists, setArtists] = useState([]);
@@ -41,7 +41,7 @@ const Profile = () => {
             headers: {
               Authorization:
                 "Bearer " +
-                "BQDEBShtfgz6MNV7cl2TApmDzBLw7_c-YAmGq14LSDHHs2ZMTFCybasDpZXAbd3Gs5edj-7qHHnSQwayrznXkHEjSJNvt0eMpccU3NG823X7LB4j-KQCs0NoQc5mgn6rDN-Tn3YiLvN-8Q8N6hShaGIywM4",
+                "BQBKnibWRNgR1Hh6C6Ro9G21Un6QOwqx6Z8PQhs3v5fU4kg-sQic_XrOswehDMBDQyOkpNiA9V94TvaCC99Z37-yHStjonXQ_U-uWRyVxVOE_7jKMnkvp0sxl2HrGtT0ClYZ5E4mzS8MPzaqOcRovtUS9zM",
             },
             json: true,
           };
@@ -58,7 +58,7 @@ const Profile = () => {
               headers: {
                 Authorization:
                   "Bearer " +
-                  "BQDEBShtfgz6MNV7cl2TApmDzBLw7_c-YAmGq14LSDHHs2ZMTFCybasDpZXAbd3Gs5edj-7qHHnSQwayrznXkHEjSJNvt0eMpccU3NG823X7LB4j-KQCs0NoQc5mgn6rDN-Tn3YiLvN-8Q8N6hShaGIywM4",
+                  "BQBKnibWRNgR1Hh6C6Ro9G21Un6QOwqx6Z8PQhs3v5fU4kg-sQic_XrOswehDMBDQyOkpNiA9V94TvaCC99Z37-yHStjonXQ_U-uWRyVxVOE_7jKMnkvp0sxl2HrGtT0ClYZ5E4mzS8MPzaqOcRovtUS9zM",
               },
               json: true,
             };
@@ -86,8 +86,9 @@ const Profile = () => {
   return (
     <div>
       <ParticlesBackground />
+        <ProfileSideBar user={user}/>
+        <Header />
         <Inner>
-          <Header />
           <Grid colGap={30} rowGap={40}>
             {artists.map((artist) => (<ArtistCard key={artist._id} data={artist} />))}
             {tracks.map((track) => (<TracksCard key={track._id} data={track} />))}

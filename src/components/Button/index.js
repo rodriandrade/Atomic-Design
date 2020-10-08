@@ -2,8 +2,9 @@ import React from 'react'
 import ButtonApp from './styled'
 
 const Button = ({children}) =>{
+    console.log("click")
     return(
-        <ButtonApp>{children}</ButtonApp>
+        <ButtonApp type="button">{children}</ButtonApp>
     )
 }
 

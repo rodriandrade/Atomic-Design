@@ -13,4 +13,10 @@ export const GlobalStyles = createGlobalStyle`
     font-size:18px;
     text-align: center;
   }
+  img{
+    width:100%;
+  }
+
+  button{ transition: .5s ease-in-out; }
+
   `

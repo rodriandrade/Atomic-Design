@@ -8,10 +8,10 @@ const Home = () => {
     return (
         <div className="App">
             <ParticlesBackground />
-                <Inner>
-                    <Header />
-                    <Hero />
-                </Inner>
+            <Inner>
+                <Header />
+                <Hero />
+            </Inner>
         </div>
     )
 }

@@ -1,13 +1,13 @@
 import React from 'react'
-import ButtonApp from './styled'
+import Container from './styled'
 
 const Button = ({children}) =>{
     console.log("click")
     return(
-        <ButtonApp type="button">{children}</ButtonApp>
+        <Container>
+            {children}
+        </Container>
     )
 }
 
 export default Button
-
-

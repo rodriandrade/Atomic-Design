@@ -12,4 +12,10 @@ const SearchBar = styled.input`
     font-size:1em;
 `
 
-export default SearchBar;
+const ChartContainer = styled.div`
+    width: 100%;
+    height: 600px;
+    margin-bottom: 80px;
+`
+
+export { SearchBar, ChartContainer }

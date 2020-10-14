@@ -35,7 +35,7 @@ const TrackContainer = styled.div`
         content: '';
         position: absolute;
         background: linear-gradient(90.01deg,#68F4DB 0%,#1E0358 99.98%);
-        width: 84%;
+        width: 76%;
         bottom: -15px;
         left: 2%;
         padding: 100px;

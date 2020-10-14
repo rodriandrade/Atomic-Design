@@ -1,34 +1,28 @@
 import React from 'react'
 import {GradientTitle, Grid, Col, Inner, Form, GradientBackImg, ParticlesBackground, Header} from '../components/Index';
+import AboutCard from '../components/AboutCard'
 
 const About = () => {
     return (
         <div className="App">
             <ParticlesBackground />
                 <Inner>
-
                     <Header />
-                    <Grid colGap={30} rowGap={40}>
-                        <Col desktop={3} tablet={6} mobile={12}>
-                            <GradientTitle> Neptune </GradientTitle>
-                        </Col>
-                        <Col desktop={3} tablet={6} mobile={12}>
-                            <GradientTitle> Mars </GradientTitle>
-                        </Col>
-                        <Col desktop={3} tablet={6} mobile={12}>
-                            <GradientTitle> Rocket </GradientTitle>
-                        </Col>
-                        <Col desktop={6} tablet={6} mobile={12}>
-                            <GradientTitle> Boca </GradientTitle>
-                        </Col>
-                        <Col desktop={6} tablet={6} mobile={12}>
-                            <GradientTitle> Otro Boca </GradientTitle>
-                        </Col>
-                        <Col desktop={12} tablet={6} mobile={12}>
-                        <Form />
-                        </Col>
-                        
-                    </Grid>
+                        <AboutCard
+                            name="Rodri"
+                            quote="FAR AWAY I CAN HEAR THE SOUND OF SOMEONE OUT THERE SINGIN’"
+                        >
+                        </AboutCard>
+                        <AboutCard
+                            name="Nayla"
+                            quote="FAR AWAY I CAN HEAR THE SOUND OF SOMEONE OUT THERE SINGIN’"
+                        >
+                        </AboutCard>
+                        <AboutCard
+                            name="Mars"
+                            quote="FAR AWAY I CAN HEAR THE SOUND OF SOMEONE OUT THERE SINGIN’"
+                        >
+                        </AboutCard>
                 </Inner>
         </div>
     )

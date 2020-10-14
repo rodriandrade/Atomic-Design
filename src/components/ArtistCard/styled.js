@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { leerColor, colores } from "../../constants";
 
 const CardImg = styled.img`
     
@@ -20,7 +21,7 @@ const Genre = styled.p`
     font-size: 1em;
     text-align: center;
     margin: 0;
-    color: #68F4DB; 
+    color: ${leerColor(colores.verde)}; 
     font-family: Abel;
     text-transform: uppercase;
     letter-spacing: 3px;

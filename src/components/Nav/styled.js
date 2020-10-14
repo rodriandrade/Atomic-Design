@@ -1,18 +1,19 @@
 import styled from 'styled-components'
+import { leerColor, colores } from "../../constants";
 
 const List = styled.li`
     font-size: 80px;
     font-family: 'Staatliches';
     letter-spacing: 10px;
-    color: #fff !important ;
+    color: ${leerColor(colores.blanco)} !important ;
     a{
-        color: #fff;
+        color: ${leerColor(colores.blanco)};
         text-decoration: none;
         position: relative;
         :hover::after {
             content: '';
             position: absolute;
-            background: linear-gradient(90.01deg,#68F4DB 0%,#1E0358 99.98%);
+            background: linear-gradient(90.01deg, ${leerColor(colores.verde)} 0%,${leerColor(colores.azul)} 99.98%);
             width: 45%;
             bottom: 0;
             left: 0;

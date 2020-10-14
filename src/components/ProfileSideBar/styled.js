@@ -2,9 +2,10 @@ import styled from 'styled-components'
 
 const Container = styled.div`
     height: 100%;
-    background-color: #101010;
+    background-color: #070707;
     place-content: center;
     display: flex;
+    border-right:1px solid grey;
 
     div{ 
         position: fixed; 

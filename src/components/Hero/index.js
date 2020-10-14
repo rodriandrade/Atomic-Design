@@ -10,7 +10,7 @@ const Hero = () =>{
         <Container direction="column">
             <ContainerLogo><img src={"https://i.ibb.co/wdWdgQQ/white-logo.png"}/></ContainerLogo>
             <h4>RODRIGO ANDRADE, MARTINA FRANCO, NAYLA ARROYO LIZZIO</h4>
-            <Button>START</Button>     
+            <Button type="button">START</Button>     
         </Container> 
     )
 

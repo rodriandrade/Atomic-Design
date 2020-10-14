@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { leerColor, colores } from "../../constants";
 
 const StyledMenu = styled.div`
 /*

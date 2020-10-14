@@ -20,5 +20,6 @@ import Menu from '../Menu'
 import Header from '../Header'
 import ProfileSideBar from '../ProfileSideBar'
 import Hero from '../Hero'
+import AboutCard from '../AboutCard'
 
-export { Blockquote, Burger, Button, Header, ArtistCard, Col, Container, Form, Grid, Loading, Inner, Nav, Hero, PrivateRoute, GradientTitle, GradientBackImg, Menu, ParticlesBackground, ProfileSideBar, Search, TracksCard, TrackData};
+export { AboutCard, Blockquote, Burger, Button, Header, ArtistCard, Col, Container, Form, Grid, Loading, Inner, Nav, Hero, PrivateRoute, GradientTitle, GradientBackImg, Menu, ParticlesBackground, ProfileSideBar, Search, TracksCard, TrackData};

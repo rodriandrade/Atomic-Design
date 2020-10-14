@@ -5,7 +5,7 @@ import { Grid, Col } from "../Index";
 const ArtistCard = props =>{
     const {genres, name, images, external_urls} = props.data
     return(
-        <Col desktop={4} tablet={6} mobile={12}>
+        <Col desktop={3} tablet={6} mobile={12}>
             <ImgCont>
                 <a href={external_urls.spotify} target="blank"><img src={images[0].url}/></a>
             </ImgCont>

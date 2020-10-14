@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const ImgGradBack =  styled.img`
       width: 40%;
      position: relative;
+     z-index: 1000;
      ::after{
         content: '';
         position: absolute;

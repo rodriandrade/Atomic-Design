@@ -4,7 +4,7 @@ import { leerColor, colores } from "../../constants";
 const TitleText = styled.h1`
   font-family: ${(props) => (props.primary ? "Staatliches" : "Abel")};
   letter-spacing: 10px;
-  margin: 0;
+  margin-bottom: ${(props) => (props.margin ? "30px" : "0")};
   color: ${leerColor(colores.blanco)} !important ;
   text-align: ${(props) => {
     switch (props.align) {

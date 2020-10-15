@@ -9,8 +9,8 @@ const Container = styled.button`
     padding: 1em 2em 1em 2em;
     color: ${leerColor(colores.blanco)};
     font-family: 'Abel', sans-serif;
+    width: auto!important;
     font-size:1em;
-    width: 15%;
     :hover{outline: none; border-color: white; box-shadow: 0 0 10px white;}
     :disabled{color: grey; border-color: grey}
     :focus{border-color: white; box-shadow: 0 0 20px white;}

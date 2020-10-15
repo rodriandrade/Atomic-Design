@@ -6,14 +6,11 @@ const Form = () =>{
     return(
 
         <Container direction="column">
- 
                 <Input placeholder="Name" />
                 <Input placeholder="Subject"/>
                 <TextArea placeholder="Text"/>
                 <Button>Submit</Button>
-
         </Container>
-
     )
 }
     

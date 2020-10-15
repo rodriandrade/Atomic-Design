@@ -12,17 +12,19 @@ const About = () => {
                         <AboutCard
                             name="Rodri"
                             quote="YOU CAN'T TOUCH MUSIC, BUT MUSIC CAN TOUCH YOU"
-                            paragraph="DALEEEEEEEEEE BOOOOOOOOOOOOOO DALEEEEEEEEEEEEE BOOOOOOOOOOOOOOOO DALEEEEEEEEEEEEE BOOOOOOOOOOOOOOOO DALEEEEEEEEEEEEE BOOOOOOOOOOOOOOOO DALEEEEEEEEEEEEE BOOOOOOOOOOOOOOOO"
+                            paragraph="“Far away I can hear the sound of someone out there singin', I'm speeding through the forest, strange echoes of Belarus, where presidents pin badges on disconnected youth. What would you be dreaming of?”"
                         >
                         </AboutCard>
                         <AboutCard
                             name="Nayla"
-                            quote="FAR AWAY I CAN HEAR THE SOUND OF SOMEONE OUT THERE SINGIN’"
+                            quote="YOU CAN'T TOUCH MUSIC, BUT MUSIC CAN TOUCH YOU"
+                            paragraph="“Far away I can hear the sound of someone out there singin', I'm speeding through the forest, strange echoes of Belarus, where presidents pin badges on disconnected youth. What would you be dreaming of?”"
                         >
                         </AboutCard>
                         <AboutCard
                             name="Mars"
-                            quote="FAR AWAY I CAN HEAR THE SOUND OF SOMEONE OUT THERE SINGIN’"
+                            quote="YOU CAN'T TOUCH MUSIC, BUT MUSIC CAN TOUCH YOU"
+                            paragraph="“Far away I can hear the sound of someone out there singin', I'm speeding through the forest, strange echoes of Belarus, where presidents pin badges on disconnected youth. What would you be dreaming of?”"
                         >
                         </AboutCard>
                 </Inner>

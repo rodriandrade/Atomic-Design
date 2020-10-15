@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { leerColor, colores } from "../../constants";
 
 const LoadingContainer = styled.div`
-    display: flex;
+    display: flex ;
     justify-content: center;
     align-items: center;
     flex-direction:column;

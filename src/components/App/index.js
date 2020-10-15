@@ -1,6 +1,6 @@
 import React from 'react';
 import { Loading, PrivateRoute } from '../Index'
-import { Home, Experiment, About, Profile } from '../../pages/index';
+import { Home, Experiment, About, Profile, Components } from '../../pages/index';
 import { useAuth0 } from "@auth0/auth0-react";
 import { GlobalStyles } from '../globalStyles'
 import {
@@ -24,6 +24,7 @@ function App() {
               
                 <PrivateRoute path="/profile" component={Profile} />  
               <Route path="/about" component={About} />
+              <Route path="/components" component={Components} />
               <Route path="/experiment" component={Experiment} />
               <Route path="/" exact component={Home} />
           </Switch>

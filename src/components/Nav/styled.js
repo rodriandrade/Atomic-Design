@@ -13,7 +13,7 @@ const List = styled.li`
         :hover::after {
             content: '';
             position: absolute;
-            background: linear-gradient(90.01deg, ${leerColor(colores.verde)} 0%,${leerColor(colores.azul)} 99.98%);
+            background: linear-gradient(90.01deg, ${leerColor(colores.verde)} 0%, ${leerColor(colores.azul)} 99.98%);
             width: 45%;
             bottom: 0;
             left: 0;

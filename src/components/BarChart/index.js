@@ -11,8 +11,24 @@ const BarChart = props => {
     const { danceability, energy, speechiness, acousticness, instrumentalness, liveness, valence } = props.trackData;
     console.log(danceability);
     const values = [danceability, energy, speechiness, acousticness, instrumentalness, liveness, valence];
-    const newValues = values.map((value) => (Math.round(value * 100)));
 
+    const newValues = values.map((value) => {
+        if (Math.floor(value) !== value){
+            let decimalValue = value.toString().split(".")[1].length || 0;
+            if(decimalValue === 3){
+                return (Math.round(value * 100))
+            } else if(decimalValue === 4){
+                return (Math.round(value * 1000))
+            } else if(decimalValue === 5){
+                return (Math.round(value * 10000))
+            } else if(decimalValue === 6){
+                return (Math.round(value * 100000))
+            } else{
+                return (Math.round(value * 1000000))
+            }
+        }
+    });
+    
     const data = [
         {
           "feature": "Danceability",
@@ -42,9 +58,9 @@ const BarChart = props => {
             "feature": "Valence",
             "value": newValues[6] ,
         }
-      ];
+    ];
 
-      console.log(data);
+    console.log(data);
 
     return(
     <ResponsiveBar
@@ -121,30 +137,6 @@ const BarChart = props => {
         labelSkipWidth={12}
         labelSkipHeight={12}
         labelTextColor={{ from: 'color', modifiers: [ [ 'darker', 1.6 ] ] }}
-        legends={[
-            {
-                dataFrom: 'keys',
-                anchor: 'bottom-right',
-                direction: 'column',
-                justify: false,
-                translateX: 120,
-                translateY: 0,
-                itemsSpacing: 2,
-                itemWidth: 100,
-                itemHeight: 20,
-                itemDirection: 'left-to-right',
-                itemOpacity: 0.85,
-                symbolSize: 20,
-                effects: [
-                    {
-                        on: 'hover',
-                        style: {
-                            itemOpacity: 1
-                        }
-                    }
-                ]
-            }
-        ]}
         animate={true}
         motionStiffness={90}
         motionDamping={15}

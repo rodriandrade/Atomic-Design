@@ -1,5 +1,5 @@
 import React from "react";
-import {Blockquote, GradientBackImg, Container} from '../Index'
+import {Blockquote, GradientBackImg, Paragraph} from '../Index'
 import {Description, DescriptionContainer, Title, Subtitle, CardContainer, Cont, AboutCardContainer} from './styled'
 
 const AboutCard = props => {
@@ -16,9 +16,9 @@ const AboutCard = props => {
             <Blockquote>{props.quote}</Blockquote>
 
             <DescriptionContainer>
-              <Description>
-              “Far away I can hear the sound of someone out there singin', I'm speeding through the forest, strange echoes of Belarus, where presidents pin badges on disconnected youth. What would you be dreaming of?”
-              </Description>
+              <Paragraph>
+              {props.paragraph}
+              </Paragraph>
             </DescriptionContainer>
 
           </CardContainer>

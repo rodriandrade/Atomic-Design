@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ImgGradBack from './styled'
+import {ImgGradBack, ImgContainer} from './styled'
 
 
 const GradientBackImg = props =>{

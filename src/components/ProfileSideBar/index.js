@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, ProfilePicture } from './styled';
+import { Container, ProfilePicture, UserInfo } from './styled';
 
 const ProfileSideBar = props =>{
 
@@ -7,12 +7,12 @@ const ProfileSideBar = props =>{
     
     return(
             <Container>
-                <div>
+                <UserInfo>
                     <ProfilePicture>
                         <img src={picture}></img>
                     </ProfilePicture>
                     <h2>{nickname}</h2>
-                </div>
+                </UserInfo>
             </Container>    
     )
 

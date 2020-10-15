@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
 import ParticlesBackground from "../components/ParticlesBackground";
-import { GradientBackImg, ArtistCard, Inner, Grid, Col, TracksCard, Header, ProfileSideBar} from "../components/Index";
+import { Title, GradientBackImg, ArtistCard, Inner, Grid, Col, TracksCard, Header, ProfileSideBar} from "../components/Index";
 
 import { useAuth0 } from "@auth0/auth0-react";
 
@@ -13,10 +13,13 @@ const Profile = () => {
   const [artists, setArtists] = useState([]);
 
   useEffect(() => {
+
     const data = () => {
+
       var request = require("request"); // "Request" library
       var client_id = "42096df29d77496488a4e35107d58df4"; // Your client id
       var client_secret = "732e624de6fd4fdfb5875e67e7659515"; // Your secret
+      var redirect_uri = "http://localhost:3000/profile"
       var scope = 'user-top-read';
       // your application requests authorization
       var authOptions = {
@@ -41,7 +44,7 @@ const Profile = () => {
             headers: {
               Authorization:
                 "Bearer " +
-                "BQBq7aBMAOLdL03O5pyBP_ZFUt_E520s7EZoNnoGM9vg6tk432DcGKNsx8y1R1Lp7M3Ih4O5RgbrDclsPkteU1JNkV7DVmFRwdcdxdv5C0-cCZoQ02Jf2Xrked0DkWagweVRmXa0TAtNQ5A_WnBeSMnaSxI",
+                "BQC872RgM89zkfDG3NNtteAMORnVVj1mzES7zHYBNkD4_LL0McW2qv5h1q1UEUA1HKpIayUvNbbBLUQrYb8JqJo_oGNJpjiWQ-btwGJqfdqfTYESM4hL70g44xdDIzpUQTlx3tkYRsG5cqPTfik8lJYz_S4",
             },
             json: true,
           };
@@ -58,7 +61,7 @@ const Profile = () => {
               headers: {
                 Authorization:
                   "Bearer " +
-                  "BQBq7aBMAOLdL03O5pyBP_ZFUt_E520s7EZoNnoGM9vg6tk432DcGKNsx8y1R1Lp7M3Ih4O5RgbrDclsPkteU1JNkV7DVmFRwdcdxdv5C0-cCZoQ02Jf2Xrked0DkWagweVRmXa0TAtNQ5A_WnBeSMnaSxI",
+                  "BQC872RgM89zkfDG3NNtteAMORnVVj1mzES7zHYBNkD4_LL0McW2qv5h1q1UEUA1HKpIayUvNbbBLUQrYb8JqJo_oGNJpjiWQ-btwGJqfdqfTYESM4hL70g44xdDIzpUQTlx3tkYRsG5cqPTfik8lJYz_S4",
               },
               json: true,
             };
@@ -75,37 +78,35 @@ const Profile = () => {
     data();
   }, []);
 
-  /*
-<Col desktop={3} tablet={6} mobile={12}>
-                <GradientBackImg src={picture} alt="Profile" />
-                <h2>{nickname}</h2>
-                <p className="lead text-muted">{email}</p>
-            </Col>
-      */
-
   return (
     <div>
       <ParticlesBackground />
         <Header />
+          
           <Grid colGap={30} rowGap={40}>
-
-
             <Col desktop={3} tablet={6} mobile={12}>
               <ProfileSideBar user={user}/>
             </Col>
 
             <Col desktop={8} tablet={6} mobile={12}>
               <Col desktop={12} tablet={12} mobile={12}>
-                <h1> Favorite Artists </h1>
+                <Title type="h1" primary={true}> Your Top Artists </Title>
               </Col>
               <Grid colGap={30} rowGap={40}>
                 {artists.map((artist) => (<ArtistCard key={artist._id} data={artist} />))}
+              </Grid>
+              <Col desktop={12} tablet={12} mobile={12}>
+                <Title type="h1" primary={true}> Your Top Tracks </Title>
+              </Col>
+              <Grid colGap={30} rowGap={40}>
                 {tracks.map((track) => (<TracksCard key={track._id} data={track} />))}
               </Grid>
             </Col>
           </Grid>
+
     </div>
   );
-};
+
+}
 
 export default Profile;

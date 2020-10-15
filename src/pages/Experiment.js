@@ -1,5 +1,5 @@
 import React from 'react'
-import { Blockquote, Form, Inner, Nav, ParticlesBackground, Search, Header } from '../components/Index'
+import { Title, Blockquote, Form, Inner, Nav, ParticlesBackground, Search, Header } from '../components/Index'
 
 const Experiment = () => {
 
@@ -8,6 +8,7 @@ const Experiment = () => {
             <ParticlesBackground />
             <Inner>
                 <Header />
+                <Title primary={true} type="none" align="center">Your music metrics</Title>
                 <Search></Search>
             </Inner>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import {GradientTitle, Grid, Col, Inner, Form, GradientBackImg, ParticlesBackground, Header} from '../components/Index';
+import {Title, GradientTitle, Grid, Col, Inner, Form, GradientBackImg, ParticlesBackground, Header} from '../components/Index';
 import AboutCard from '../components/AboutCard'
 
 const About = () => {
@@ -8,9 +8,11 @@ const About = () => {
             <ParticlesBackground />
                 <Inner>
                     <Header />
+                        <Title primary={true} align="center" type="none">Here We Are</Title>
                         <AboutCard
                             name="Rodri"
-                            quote="FAR AWAY I CAN HEAR THE SOUND OF SOMEONE OUT THERE SINGIN’"
+                            quote="YOU CAN'T TOUCH MUSIC, BUT MUSIC CAN TOUCH YOU"
+                            paragraph="DALEEEEEEEEEE BOOOOOOOOOOOOOO DALEEEEEEEEEEEEE BOOOOOOOOOOOOOOOO DALEEEEEEEEEEEEE BOOOOOOOOOOOOOOOO DALEEEEEEEEEEEEE BOOOOOOOOOOOOOOOO DALEEEEEEEEEEEEE BOOOOOOOOOOOOOOOO"
                         >
                         </AboutCard>
                         <AboutCard

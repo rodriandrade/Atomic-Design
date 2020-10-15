@@ -1,7 +1,8 @@
 import { logRoles } from '@testing-library/react';
 import React from 'react';
-import { Logo, ContainerLogo} from './styled';
-import { Button, Container } from '../Index';
+import { Logo, ContainerLogo, Container} from './styled';
+import Button from '../Button';
+import Title from '../Title'
 
 const Hero = () =>{
     
@@ -9,7 +10,7 @@ const Hero = () =>{
        
         <Container direction="column">
             <ContainerLogo><img src={"https://i.ibb.co/wdWdgQQ/white-logo.png"}/></ContainerLogo>
-            <h4>RODRIGO ANDRADE, MARTINA FRANCO, NAYLA ARROYO LIZZIO</h4>
+            <Title size="h4">RODRIGO ANDRADE, MARTINA FRANCO, NAYLA ARROYO LIZZIO</Title>
             <Button type="button">START</Button>     
         </Container> 
     )

@@ -1,11 +1,12 @@
 import React from "react";
+import LoadingContainer from './styled'
 const loading =
   "https://cdn.auth0.com/blog/auth0-react-sample/assets/loading.svg";
 
 const Loading = () => (
-  <div className="spinner">
+  <LoadingContainer>
     <img src={loading} alt="Loading" />
-  </div>
+  </LoadingContainer>
 );
 
 export default Loading;

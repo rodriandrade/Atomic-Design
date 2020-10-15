@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
 const CardImg = styled.div`
-    width: 400px;
+    width: 200px;
     margin: 0 auto;
     margin-top:50px;
 `
 
 const TrackTitle = styled.h2`
-    font-size: 64px;
+    font-size: 36px;
     font-family: 'Staatliches';
     text-align: center;
     margin:0;
@@ -15,7 +15,7 @@ const TrackTitle = styled.h2`
 `
 
 const ArtistName = styled.h5`
-    font-size: 26px;
+    font-size: 18px;
     font-family: 'Staatliches';
     color: #68F4DB; 
     text-align: center;

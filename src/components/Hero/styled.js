@@ -8,5 +8,14 @@ const ContainerLogo = styled.div`
     width: 960px;
 `
 
+const Container = styled.div`
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    height: 100vh;  
+    justify-content: center;
+    align-items: center;
+`
 
-export {ContainerLogo }
+
+export {ContainerLogo, Container}

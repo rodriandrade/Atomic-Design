@@ -19,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   text{
-    font-size: 20px !important;
+    font-size: 16px !important;
     fill: ${leerColor(colores.blanco)} !important;
     font-family: 'Abel', sans-serif !important;
   }

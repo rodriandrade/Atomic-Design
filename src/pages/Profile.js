@@ -87,7 +87,6 @@ const Profile = () => {
             <Col desktop={3} tablet={6} mobile={12}>
               <ProfileSideBar user={user}/>
             </Col>
-
             <Col desktop={8} tablet={6} mobile={12}>
               <Col desktop={12} tablet={12} mobile={12}>
                 <Title type="h1" primary={true} margin={true}> Your Top Artists </Title>

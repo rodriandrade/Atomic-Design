@@ -9,7 +9,6 @@ const Button = styled.button`
     color: white;
     font-family: 'Abel', sans-serif;
     font-size:1em;
-    width: 30%;
     :hover{outline: none; border-color: white; box-shadow: 0 0 10px white;}
     :disabled{color: grey; border-color: grey}
     :focus{border-color: white; box-shadow: 0 0 20px white;}

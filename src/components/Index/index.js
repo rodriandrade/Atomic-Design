@@ -24,5 +24,6 @@ import AboutCard from '../AboutCard'
 import Title from '../Title'
 import Input from '../Input'
 import Paragraph from '../Paragraph'
+import BarChart from '../BarChart'
 
-export { Title, Paragraph, Input, AboutCard, Blockquote, Burger, Button, Header, ArtistCard, Col, Container, Form, Grid, Loading, Inner, Nav, Hero, PrivateRoute, GradientTitle, GradientBackImg, Menu, ParticlesBackground, ProfileSideBar, Search, TracksCard, TrackData};
+export { BarChart, Title, Paragraph, Input, AboutCard, Blockquote, Burger, Button, Header, ArtistCard, Col, Container, Form, Grid, Loading, Inner, Nav, Hero, PrivateRoute, GradientTitle, GradientBackImg, Menu, ParticlesBackground, ProfileSideBar, Search, TracksCard, TrackData};

@@ -5,6 +5,7 @@ export const colores = {
   negro2: Color.rgb(7, 7, 7),
   gris: Color.rgb(99, 99, 99),
   azul: Color.rgb(30, 3, 88),
-  verde: Color.rgb(104, 244, 219)
+  verde: Color.rgb(104, 244, 219),
+  rojo: Color.rgb(156,25,25)
 };
 export const leerColor = (color) => color.hsl().string();

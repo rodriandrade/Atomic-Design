@@ -1,10 +1,10 @@
 import React from 'react'
 import Container from './styled'
 
-const Button = ({children}) =>{
-    console.log("click")
+const Button = ({children, ...props}) =>{
+    const { state, margin } = props;
     return(
-        <Container>
+        <Container state={state} margin={margin}>
             {children}
         </Container>
     )

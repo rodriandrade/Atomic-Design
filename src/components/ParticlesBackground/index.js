@@ -2,9 +2,10 @@ import React from 'react'
 import Particles from 'react-particles-js';
 import ParticlesCont from './styled'
 
-const ParticlesBackground = ({children}) =>{
+const ParticlesBackground = ({children, ...props}) =>{
+    const { height } = props;
     return(
-        <ParticlesCont>
+        <ParticlesCont height={height}>
             <Particles 
             params={{
                 "particles": {

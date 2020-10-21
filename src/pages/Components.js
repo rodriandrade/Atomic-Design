@@ -1,14 +1,248 @@
 import React from 'react'
-import { TracksCard, AboutCard, Container, Title, Input, Blockquote, Form, Inner, Nav, ParticlesBackground, Search, Header, Button, Paragraph, Col, Grid } from '../components/Index'
+import { TracksCard, ArtistCard, AboutCard, Container, Title, Input, Blockquote, Form, Inner, Nav, ParticlesBackground, Search, Header, Button, Paragraph, Col, Grid, BarChart } from '../components/Index'
 
 const Components = () => {
+
+    const trackData = {
+        "duration_ms" : 255349,
+        "key" : 5,
+        "mode" : 0,
+        "time_signature" : 4,
+        "acousticness" : 0.514,
+        "danceability" : 0.735,
+        "energy" : 0.578,
+        "instrumentalness" : 0.0902,
+        "liveness" : 0.159,
+        "loudness" : -11.840,
+        "speechiness" : 0.0461,
+        "valence" : 0.624,
+        "tempo" : 98.002,
+        "id" : "06AKEBrKUckW0KREUWRnvT",
+        "uri" : "spotify:track:06AKEBrKUckW0KREUWRnvT",
+        "track_href" : "https://api.spotify.com/v1/tracks/06AKEBrKUckW0KREUWRnvT",
+        "analysis_url" : "https://api.spotify.com/v1/audio-analysis/06AKEBrKUckW0KREUWRnvT",
+        "type" : "audio_features"
+    };
+
+    const track = {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU"
+              },
+              "href": "https://api.spotify.com/v1/artists/4gzpq5DPGxSnKTe4SA8HAU",
+              "id": "4gzpq5DPGxSnKTe4SA8HAU",
+              "name": "Coldplay",
+              "type": "artist",
+              "uri": "spotify:artist:4gzpq5DPGxSnKTe4SA8HAU"
+            }
+          ],
+          "available_markets": [
+            "AD",
+            "AE",
+            "AL",
+            "AR",
+            "AT",
+            "AU",
+            "BA",
+            "BE",
+            "BG",
+            "BH",
+            "BO",
+            "BR",
+            "BY",
+            "CA",
+            "CH",
+            "CL",
+            "CO",
+            "CR",
+            "CY",
+            "CZ",
+            "DE",
+            "DK",
+            "DO",
+            "DZ",
+            "EC",
+            "EE",
+            "EG",
+            "ES",
+            "FI",
+            "FR",
+            "GB",
+            "GR",
+            "GT",
+            "HK",
+            "HN",
+            "HR",
+            "HU",
+            "ID",
+            "IE",
+            "IL",
+            "IN",
+            "IS",
+            "IT",
+            "JO",
+            "JP",
+            "KW",
+            "KZ",
+            "LB",
+            "LI",
+            "LT",
+            "LU",
+            "LV",
+            "MA",
+            "MC",
+            "MD",
+            "ME",
+            "MK",
+            "MT",
+            "MX",
+            "MY",
+            "NI",
+            "NL",
+            "NO",
+            "NZ",
+            "OM",
+            "PA",
+            "PE",
+            "PH",
+            "PL",
+            "PS",
+            "PT",
+            "PY",
+            "QA",
+            "RO",
+            "RS",
+            "RU",
+            "SA",
+            "SE",
+            "SG",
+            "SI",
+            "SK",
+            "SV",
+            "TH",
+            "TN",
+            "TR",
+            "TW",
+            "UA",
+            "US",
+            "UY",
+            "VN",
+            "XK",
+            "ZA"
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/2G4AUqfwxcV1UdQjm2ouYr"
+          },
+          "href": "https://api.spotify.com/v1/albums/2G4AUqfwxcV1UdQjm2ouYr",
+          "id": "2G4AUqfwxcV1UdQjm2ouYr",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2731cbd0d5849b51c79c99e7b87",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e021cbd0d5849b51c79c99e7b87",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048511cbd0d5849b51c79c99e7b87",
+              "width": 64
+            }
+          ],
+          "name": "Ghost Stories",
+          "release_date": "2014-05-19",
+          "release_date_precision": "day",
+          "total_tracks": 9,
+          "type": "album",
+          "uri": "spotify:album:2G4AUqfwxcV1UdQjm2ouYr"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU"
+            },
+            "href": "https://api.spotify.com/v1/artists/4gzpq5DPGxSnKTe4SA8HAU",
+            "id": "4gzpq5DPGxSnKTe4SA8HAU",
+            "name": "Coldplay",
+            "type": "artist",
+            "uri": "spotify:artist:4gzpq5DPGxSnKTe4SA8HAU"
+          }
+        ],
+        "available_markets": [],
+        "disc_number": 1,
+        "duration_ms": 294666,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "GBAYE1400202"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/4GKk1uNzpxIptBuaY97Dkj"
+        },
+        "href": "https://api.spotify.com/v1/tracks/4GKk1uNzpxIptBuaY97Dkj",
+        "id": "4GKk1uNzpxIptBuaY97Dkj",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Midnight",
+        "popularity": 63,
+        "preview_url": "https://p.scdn.co/mp3-preview/95f1c8fac1ecff38637e896ef082ccf71d10fffa?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 5,
+        "type": "track",
+        "uri": "spotify:track:4GKk1uNzpxIptBuaY97Dkj"
+    }
+
+    const artist = {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/10gzBoINW3cLJfZUka8Zoe"
+        },
+        "followers": {
+          "href": null,
+          "total": 613387
+        },
+        "genres": [
+          "edm",
+          "progressive house",
+          "progressive trance",
+          "trance",
+          "uplifting trance"
+        ],
+        "href": "https://api.spotify.com/v1/artists/10gzBoINW3cLJfZUka8Zoe",
+        "id": "10gzBoINW3cLJfZUka8Zoe",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/4dc7080ef509c36203a131a0eab8dd5e4800d7c2",
+            "width": 640
+          },
+          {
+            "height": 320,
+            "url": "https://i.scdn.co/image/1def2cb9b2bdf2fdd596f4aff4d8d3efcacf1fa4",
+            "width": 320
+          },
+          {
+            "height": 160,
+            "url": "https://i.scdn.co/image/c8fde6d9f274eb40e5404dd1e806b597ca09c29d",
+            "width": 160
+          }
+        ],
+        "name": "Above & Beyond",
+        "popularity": 70,
+        "type": "artist",
+        "uri": "spotify:artist:10gzBoINW3cLJfZUka8Zoe"
+    }
 
     return (
         <>
         <Inner>
             <Header />
-
+            
             <Grid>
+
                 <Col desktop={12} tablet={6} mobile={12}>
                     <h2>Blockquote</h2>
                     <Blockquote>Buenas, soy un blockquote</Blockquote>
@@ -42,7 +276,11 @@ const Components = () => {
 
                 <Col desktop={12} tablet={6} mobile={12}>
                     <h2>Button</h2>
-                    <Button>Button</Button>
+                    <Button state="standard" margin={true}>Button</Button>
+                    <Button state="focus" margin={true}>Focus</Button>
+                    <Button state="error" margin={true}>Error</Button>
+                    <Button state="submit" margin={true}>Submit</Button>
+                    <Button state="disabled" margin={true}>Disabled</Button>
                 </Col>
 
                 <Col desktop={12} tablet={6} mobile={12}>
@@ -58,7 +296,28 @@ const Components = () => {
                     />
                 </Col>
 
+                <Col desktop={12} tablet={6} mobile={12}>
+                    <h2>Track Card</h2>
+                    <TracksCard data={track}></TracksCard>
+                </Col>
+
+                <Col desktop={12} tablet={6} mobile={12}>
+                    <h2>Artist Card</h2>
+                    <ArtistCard data={artist}></ArtistCard>
+                </Col>
+
+                <Col desktop={12} tablet={6} mobile={12}>
+                    <h2>Bar Chart</h2>
+                    <BarChart trackData={trackData}></BarChart>
+                </Col>
+
+                <Col desktop={12} tablet={6} mobile={12}>
+                    <h2>Particles Background</h2>
+                    <ParticlesBackground height="200" />
+                </Col>
+
             </Grid>
+            
 
         </Inner>
         </>

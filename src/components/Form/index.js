@@ -9,7 +9,7 @@ const Form = () =>{
                 <Input placeholder="Name" />
                 <Input placeholder="Subject"/>
                 <TextArea placeholder="Text"/>
-                <Button>Submit</Button>
+                <Button state="standard">Submit</Button>
         </Container>
     )
 }

@@ -6,7 +6,6 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Staatliches';
     letter-spacing: 10px;
     color: ${leerColor(colores.blanco)} !important ;
-    margin-top: 60px!important;
   }
   h4{
     font-family: 'Abel', sans-serif;

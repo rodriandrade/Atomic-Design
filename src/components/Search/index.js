@@ -75,24 +75,6 @@ const Search = (props) => {
     });
   };
 
-/*
-  <SearchBar
-        placeholder="Artist name"
-        onChange={(event) => setArtistName(event.target.value)}
-      ></SearchBar>
-      <SearchBar
-        placeholder="Track name"
-        onChange={(event) => setTrackName(event.target.value)}
-      ></SearchBar>
-
-      <Input placeholder="Artist Name" onChange={(event) => setArtistName(event.target.value)}></Input>
-      <Input placeholder="Track Name" onChange={(event) => setTrackName(event.target.value)}></Input>
-
-      <button onClick={spotifyData}>Search</button>
-   {trackInfo && <TracksCard data={trackInfo} />} */
-
-
-
   return (
 
     <>
@@ -116,17 +98,14 @@ const Search = (props) => {
 
     <SearchContainer align="center">
       <Grid colGap={30} rowGap={40}>
-
         <Col desktop={3} tablet={6} mobile={12}>
           {trackData && <TrackData trackData={trackInfo} />}
         </Col>
-
         <Col desktop={9} tablet={6} mobile={12}>
-          <ChartContainer>
+          
             {trackData && <BarChart trackData={trackData} />}
-          </ChartContainer>
+         
         </Col>
-
       </Grid>
     </SearchContainer>
 

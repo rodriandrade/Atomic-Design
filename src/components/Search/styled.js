@@ -14,11 +14,12 @@ const SearchBar = styled.input`
     width: 30%;
     margin-bottom:30px;
 `
-
+/*
 const ChartContainer = styled.div`
     height: 400px;
     margin-bottom: 80px;
 `
+*/
 
 const SearchContainer = styled.div`
     display: flex; 
@@ -42,4 +43,4 @@ const Button = styled.button`
     :focus{border-color: white; box-shadow: 0 0 20px white;}
 `
 
-export { SearchBar, ChartContainer, SearchContainer, Button }
+export { SearchBar, /*ChartContainer,*/ SearchContainer, Button }

@@ -5,6 +5,7 @@ const TitleText = styled.h1`
   font-family: ${(props) => (props.primary ? "Staatliches" : "Abel")};
   letter-spacing: 10px;
   margin-bottom: ${(props) => (props.margin ? "30px" : "0")};
+  margin-right: ${(props) => (props.margin ? "50px" : "0")};
   margin-top: 60px;
   color: ${leerColor(colores.blanco)} !important ;
   text-align: ${(props) => {

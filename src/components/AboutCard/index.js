@@ -12,7 +12,7 @@ const AboutCard = props => {
           <CardContainer>
 
             <Title>{props.name}</Title>
-            <Subtitle>Frontend Developer</Subtitle>
+            <Subtitle>{props.area}</Subtitle>
             <Blockquote>{props.quote}</Blockquote>
 
             <DescriptionContainer>

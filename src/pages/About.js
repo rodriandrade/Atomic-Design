@@ -11,18 +11,21 @@ const About = () => {
                         <Title primary={true} align="center" type="none">Here We Are</Title>
                         <AboutCard
                             name="Rodri"
+                            area="DJ & FrontEnd Developer"
                             quote="YOU CAN'T TOUCH MUSIC, BUT MUSIC CAN TOUCH YOU"
                             paragraph="“Far away I can hear the sound of someone out there singin', I'm speeding through the forest, strange echoes of Belarus, where presidents pin badges on disconnected youth. What would you be dreaming of?”"
                         >
                         </AboutCard>
                         <AboutCard
                             name="Nayla"
+                            area="FrontEnd Developer"
                             quote="YOU CAN'T TOUCH MUSIC, BUT MUSIC CAN TOUCH YOU"
                             paragraph="“Far away I can hear the sound of someone out there singin', I'm speeding through the forest, strange echoes of Belarus, where presidents pin badges on disconnected youth. What would you be dreaming of?”"
                         >
                         </AboutCard>
                         <AboutCard
                             name="Mars"
+                            area="FrontEnd Developer"
                             quote="YOU CAN'T TOUCH MUSIC, BUT MUSIC CAN TOUCH YOU"
                             paragraph="“Far away I can hear the sound of someone out there singin', I'm speeding through the forest, strange echoes of Belarus, where presidents pin badges on disconnected youth. What would you be dreaming of?”"
                         >

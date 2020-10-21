@@ -244,22 +244,21 @@ const Components = () => {
             <Grid>
 
                 <Col desktop={12} tablet={6} mobile={12}>
-                    <h2>Blockquote</h2>
-                    <Blockquote>Buenas, soy un blockquote</Blockquote>
-                </Col>
-
-                <Col desktop={12} tablet={6} mobile={12}>
                     <h2>Title</h2>
-                    <Title primary={true} size="h1">Title H1</Title>
-                    <Title primary={true} size="h2">Title H2</Title>
-                    <Title primary={true} size="h3">Title H3</Title>
-                    <Title primary={true} size="h4">Title H4</Title>
+                    <Container direction="row">
+                        <Title primary={true} size="h1" margin={true}>Title H1</Title>
+                        <Title primary={true} size="h2" margin={true}>Title H2</Title>
+                        <Title primary={true} size="h3" margin={true}>Title H3</Title>
+                        <Title primary={true} size="h4" margin={true}>Title H4</Title>
+                    </Container>
                 </Col>
 
                 <Col desktop={12} tablet={6} mobile={12}>
                     <h2>Subtitle</h2>
-                    <Title primary={false} size="h3">Subtitle</Title>
-                    <Title primary={false} size="h4">Subtitle 2</Title>
+                    <Container direction="row">
+                        <Title primary={false} size="h3" margin={true}>Subtitle</Title>
+                        <Title primary={false} size="h4" margin={true}>Subtitle 2</Title>
+                    </Container>
                 </Col>
 
                 <Col desktop={6} tablet={6} mobile={12}>
@@ -267,6 +266,11 @@ const Components = () => {
                     <Paragraph>
                     “Melody is the most important ingredient in trance,” he concludes, as his PR comes over to signal that our interview time is up. “In house it’s the groove, in techno it’s the techno sounds and dark atmosphere, but in trance it’s the melody — it’s the closest to classical music, and it’s always moved me. My heart will always be there.” 
                     </Paragraph>
+                </Col>
+
+                <Col desktop={12} tablet={6} mobile={12}>
+                    <h2>Blockquote</h2>
+                    <Blockquote>"Life is made of small moments like this" - Tony, Paavo & Jono</Blockquote>
                 </Col>
                 
                 <Col desktop={8} tablet={6} mobile={12}>
@@ -292,7 +296,9 @@ const Components = () => {
                     <h2>About Card</h2>
                     <AboutCard
                         name="Title"
+                        area="Subtitle"
                         quote="Quote text"
+                        paragraph="Description"
                     />
                 </Col>
 

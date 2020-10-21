@@ -1,5 +1,5 @@
 import React from 'react'
-import { TracksCard, ArtistCard, AboutCard, Container, Title, Input, Blockquote, Form, Inner, Nav, ParticlesBackground, Search, Header, Button, Paragraph, Col, Grid, BarChart, TrackData } from '../components/Index'
+import { TracksCard, ArtistCard, AboutCard, Container, Title, Input, Blockquote, Form, Inner, Nav, ParticlesBackground, Search, Header, Button, Paragraph, Col, Grid, BarChart, TrackData, TextArea } from '../components/Index'
 
 const Components = () => {
 
@@ -272,11 +272,6 @@ const Components = () => {
                     <h2>Blockquote</h2>
                     <Blockquote>"Life is made of small moments like this" - Tony, Paavo & Jono</Blockquote>
                 </Col>
-                
-                <Col desktop={8} tablet={6} mobile={12}>
-                    <h2>Form</h2>
-                    <Form></Form>
-                </Col>
 
                 <Col desktop={12} tablet={6} mobile={12}>
                     <h2>Button</h2>
@@ -286,12 +281,22 @@ const Components = () => {
                     <Button state="submit" margin={true}>Submit</Button>
                     <Button state="disabled" margin={true}>Disabled</Button>
                 </Col>
+                
+                <Col desktop={8} tablet={6} mobile={12}>
+                    <h2>Form</h2>
+                    <Form></Form>
+                </Col>
 
                 <Col desktop={12} tablet={6} mobile={12}>
                     <h2>Input</h2>
                     <Input placeholder="Input"></Input>
                 </Col>
                 
+                <Col desktop={12} tablet={6} mobile={12}>
+                    <h2>TextArea</h2>
+                    <TextArea placeholder="Text"></TextArea>
+                </Col>
+
                 <Col desktop={12} tablet={6} mobile={12}>
                     <h2>About Card</h2>
                     <AboutCard

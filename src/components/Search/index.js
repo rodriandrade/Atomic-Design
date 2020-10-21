@@ -99,7 +99,7 @@ const Search = (props) => {
     <SearchContainer align="center">
       <Grid colGap={30} rowGap={40}>
         <Col desktop={3} tablet={6} mobile={12}>
-          {trackData && <TrackData trackData={trackInfo} />}
+          {trackData && <TrackData trackInfo={trackInfo} />}
         </Col>
         <Col desktop={9} tablet={6} mobile={12}>
           

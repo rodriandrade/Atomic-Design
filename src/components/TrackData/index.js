@@ -3,12 +3,7 @@ import { TrackTitle, ArtistName, CardImg } from './styled';
 
 const TrackData = props =>{
 
-    const {artists, name, album, external_urls} = props.trackData
-    /*
-    const { danceability, energy, speechiness, acousticness, instrumentalness } = props.trackData;
-    const values = [danceability, energy, speechiness, acousticness, instrumentalness];
-    const newValues = values.map((value) => (Math.round(value * 100)));
-    */
+    const {artists, name, album, external_urls} = props.trackInfo
     
     return(
         <div>

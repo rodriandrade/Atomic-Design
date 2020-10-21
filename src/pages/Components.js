@@ -1,5 +1,5 @@
 import React from 'react'
-import { TracksCard, ArtistCard, AboutCard, Container, Title, Input, Blockquote, Form, Inner, Nav, ParticlesBackground, Search, Header, Button, Paragraph, Col, Grid, BarChart } from '../components/Index'
+import { TracksCard, ArtistCard, AboutCard, Container, Title, Input, Blockquote, Form, Inner, Nav, ParticlesBackground, Search, Header, Button, Paragraph, Col, Grid, BarChart, TrackData } from '../components/Index'
 
 const Components = () => {
 
@@ -299,6 +299,11 @@ const Components = () => {
                 <Col desktop={12} tablet={6} mobile={12}>
                     <h2>Track Card</h2>
                     <TracksCard data={track}></TracksCard>
+                </Col>
+
+                <Col desktop={12} tablet={6} mobile={12}>
+                    <h2>Track Data for Experiment</h2>
+                    <TrackData trackInfo={track}></TrackData>
                 </Col>
 
                 <Col desktop={12} tablet={6} mobile={12}>

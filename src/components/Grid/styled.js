@@ -5,6 +5,7 @@ const GridContainer = styled.div`
     grid-template-columns:repeat(12, 1fr);
     grid-column-gap: ${props => props.colGap || 30}px;
     grid-row-gap: ${props => props.rowGap || 40}px;
+    width:100%;
 `
 
 const ColContainer = styled.div`

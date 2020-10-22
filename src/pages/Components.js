@@ -244,7 +244,7 @@ const Components = () => {
             <Grid>
 
                 <Col desktop={12} tablet={6} mobile={12}>
-                    <h2>Title</h2>
+                <Title primary={true} size="componentsHeading"  > TITLES </Title>
                     <Container direction="row">
                         <Title primary={true} size="h1" margin={true}>Title H1</Title>
                         <Title primary={true} size="h2" margin={true}>Title H2</Title>
@@ -252,53 +252,76 @@ const Components = () => {
                         <Title primary={true} size="h4" margin={true}>Title H4</Title>
                     </Container>
                 </Col>
+              
+              </Grid>
 
+              <Grid>
                 <Col desktop={12} tablet={6} mobile={12}>
-                    <h2>Subtitle</h2>
+                  <Title primary={true} size="componentsHeading"> SUBTITLES </Title>
                     <Container direction="row">
-                        <Title primary={false} size="h3" margin={true}>Subtitle</Title>
-                        <Title primary={false} size="h4" margin={true}>Subtitle 2</Title>
+                        <Title primary={false} size="h3" margin={true}>SUBTITLE</Title>
+                        <Title primary={false} size="h4" margin={true}>SUBTITLE 2</Title>
                     </Container>
                 </Col>
+              </Grid>
 
-                <Col desktop={6} tablet={6} mobile={12}>
-                    <h2>Paragraph</h2>
+              <Grid>
+                <Col desktop={12} tablet={6} mobile={12}>
+                  <Title primary={true} size="componentsHeading"> PARAGRAPH </Title>
+                </Col>
+                  <Col desktop={6} tablet={6} mobile={12}>
                     <Paragraph>
                     “Melody is the most important ingredient in trance,” he concludes, as his PR comes over to signal that our interview time is up. “In house it’s the groove, in techno it’s the techno sounds and dark atmosphere, but in trance it’s the melody — it’s the closest to classical music, and it’s always moved me. My heart will always be there.” 
                     </Paragraph>
                 </Col>
+              </Grid>
 
+              <Grid>
                 <Col desktop={12} tablet={6} mobile={12}>
-                    <h2>Blockquote</h2>
-                    <Blockquote>"Life is made of small moments like this" - Tony, Paavo & Jono</Blockquote>
+                  <Title primary={true} size="componentsHeading"> BLOCKQUOTE </Title>
                 </Col>
+                <Col desktop={6} tablet={6} mobile={12}>
+                    <Blockquote>"LIFE IS MADE OF SMALL MOMENTS LIKE THIS" - Tony, Paavo & Jono</Blockquote>
+                </Col>
+              </Grid>
 
+              <Grid>
                 <Col desktop={12} tablet={6} mobile={12}>
-                    <h2>Button</h2>
+                  <Title primary={true} size="componentsHeading"> BUTTONS </Title>
                     <Button state="standard" margin={true}>Button</Button>
                     <Button state="focus" margin={true}>Focus</Button>
                     <Button state="error" margin={true}>Error</Button>
                     <Button state="submit" margin={true}>Submit</Button>
                     <Button state="disabled" margin={true}>Disabled</Button>
                 </Col>
-                
-                <Col desktop={8} tablet={6} mobile={12}>
-                    <h2>Form</h2>
-                    <Form></Form>
-                </Col>
-
+              </Grid>
+              
+              <Grid>
                 <Col desktop={12} tablet={6} mobile={12}>
-                    <h2>Input</h2>
+                  <Title primary={true} size="componentsHeading"> FORM </Title>
+                  <Col desktop={8} tablet={6} mobile={12}>
+                    <Form></Form>
+                  </Col>
+                </Col>
+              </Grid>
+
+              <Grid>
+                <Col desktop={12} tablet={6} mobile={12}>
+                  <Title primary={true} size="componentsHeading"> INPUT </Title>
                     <Input placeholder="Input"></Input>
                 </Col>
-                
+              </Grid> 
+
+              <Grid>
                 <Col desktop={12} tablet={6} mobile={12}>
-                    <h2>TextArea</h2>
+                  <Title primary={true} size="componentsHeading"> TEXTAREA </Title>
                     <TextArea placeholder="Text"></TextArea>
                 </Col>
+              </Grid>
 
+              <Grid>
                 <Col desktop={12} tablet={6} mobile={12}>
-                    <h2>About Card</h2>
+                  <Title primary={true} size="componentsHeading"> ABOUT CARD </Title>
                     <AboutCard
                         name="Title"
                         area="Subtitle"
@@ -306,34 +329,42 @@ const Components = () => {
                         paragraph="Description"
                     />
                 </Col>
+              </Grid>
 
+              <Grid>
                 <Col desktop={12} tablet={6} mobile={12}>
-                    <h2>Track Card</h2>
-                    <TracksCard data={track}></TracksCard>
+                  <Title primary={true} size="componentsHeading"> TRACK CARD </Title>
+                  <TracksCard data={track}></TracksCard>
                 </Col>
+              </Grid>
 
+              <Grid>
                 <Col desktop={12} tablet={6} mobile={12}>
-                    <h2>Track Data for Experiment</h2>
-                    <TrackData trackInfo={track}></TrackData>
+                  <Title primary={true} size="componentsHeading"> TRACK DATA FOR EXPERIMENT </Title>
+                  <TrackData trackInfo={track}></TrackData>
                 </Col>
+              </Grid>
 
+              <Grid>
                 <Col desktop={12} tablet={6} mobile={12}>
-                    <h2>Artist Card</h2>
-                    <ArtistCard data={artist}></ArtistCard>
+                  <Title primary={true} size="componentsHeading"> ARTIST CARD </Title>
+                  <ArtistCard data={artist}></ArtistCard>
                 </Col>
+              </Grid>
 
+              <Grid>
                 <Col desktop={12} tablet={6} mobile={12}>
-                    <h2>Bar Chart</h2>
-                    <BarChart trackData={trackData}></BarChart>
+                  <Title primary={true} size="componentsHeading"> BAR CHART </Title>
+                  <BarChart trackData={trackData}></BarChart>
                 </Col>
+              </Grid>
 
+              <Grid>
                 <Col desktop={12} tablet={6} mobile={12}>
-                    <h2>Particles Background</h2>
-                    <ParticlesBackground height="200" />
+                  <Title primary={true} size="componentsHeading"> PARTICLES BACKGROUND </Title>
+                  <ParticlesBackground height="200" />
                 </Col>
-
-            </Grid>
-            
+              </Grid>
 
         </Inner>
         </>

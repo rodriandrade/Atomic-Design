@@ -42,6 +42,7 @@ const Subtitle = styled.h5`
     text-transform: uppercase;
     margin:0;
     margin-bottom: 20px;
+    letter-spacing: 10px;
 `
 
 const DescriptionContainer = styled.div`

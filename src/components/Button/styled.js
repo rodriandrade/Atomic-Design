@@ -12,7 +12,11 @@ const Container = styled.button`
     width: auto!important;
     font-size:1em;
     margin-right: ${(props) => (props.margin ? "50px" : "0")}; 
-    :hover{outline: none; border-color: white; box-shadow: 0 0 10px white;}
+    :hover{ 
+        border-color: ${(props) => (props.state === "disabled" || props.state === "error" ? "" : "#fff")};
+        box-shadow: ${(props) => (props.state === "disabled" || props.state === "error" ? "" : "0 0 10px #fff")};
+        outline: none;
+    }
     :focus{border-color: white; box-shadow: 0 0 20px white;}
 
     color: ${(props) => {
@@ -57,6 +61,7 @@ const Container = styled.button`
             return "0 0 0px rgb(99, 99, 99)";
         }
     }};
+
 `
 
 export default Container
